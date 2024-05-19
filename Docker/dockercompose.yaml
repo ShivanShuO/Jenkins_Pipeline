@@ -1,0 +1,15 @@
+version: '3.7'
+services:
+  go:
+    image: your-docker-registry/myapp-go:latest
+    ports:
+      - "8080:8080"
+  nextjs:
+    image: your-docker-registry/myapp-nextjs:latest
+    ports:
+      - "3000:3000"
+  wordpress:
+    image: your-docker-registry/myapp-wordpress:latest
+    ports:
+      - "80:80"
+
